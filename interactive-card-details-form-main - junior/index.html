@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+
+  <script defer src="./main.js"></script>
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="containerCentral">
+
+      <div class="containerFrontCard">
+
+        <div class="circuloBlanco"></div>
+        <div class="circuloVacio"></div>
+
+        <p class="nroCard"></p>
+        <p class="nameCard"></p>
+        <p class="vencCardMonth"></p>
+        <p class="vencCardYear"></p>
+
+      </div>
+
+      <div class="containerBackCard">
+        <p class="cvcCard"></p>
+      </div>
+
+      <div class="containerDatos">
+
+        <form action="" class="formDatosUsuario">
+
+          <label class="lblName" for="">CARDHOLDER NAME</label>
+          <input class="inputName" type="text" maxlength="16" placeholder=" e.g. John Doe" required>
+          <label class="lblNumber" for="">CARD NUMBER</label>
+          <input class="inputNroTarjeta" type="text" maxlength="16" placeholder=" e.g. 6554 4582 1258 3265">
+
+          <label class="lblDate" for="">EXP. DATE (MM/YY)</label>
+          <input class="inputMonth" type="text" maxlength="2" placeholder="MM">
+          <input class="inputYear" type="text" maxlength="2"  placeholder="YY">
+          <label class="lblCVC" for="">CVC</label>
+          <input class="inputCVC" type="text" maxlength="3" placeholder=" e. g. 1 2 3">
+
+          <button class="btnConfirm">Confirm</button>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <footer>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Federico Douglas Price (fdouglas27) </a>.</footer> -->
+</body>
+
+</html>
